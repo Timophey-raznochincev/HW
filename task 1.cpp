@@ -1,19 +1,20 @@
 #include <iostream>
-
+#include <math.h>
 using namespace std;
+int ft_sumdeg(int n,int k){
+    int s = 0;
+    for (int i = 1; i <= n;i++){
+        s = s + pow(i,k);
+        }
+   return s;
+   }
+
+
 int main()
 {
-    cout<<"Enter tekst"<<endl;
-string t;
+    int n,k;
+  cin>>n>>k;
+  cout<<ft_sumdeg (n,k);
  
- getline(cin,t);
- 
- 
- 
-  int g = t.length()*23;
-  cout<< g/100 <<"rub"<<" "<< g%100 <<"kop"<<endl;
-
-
- 
- return 0;
+  return 0;
 }
